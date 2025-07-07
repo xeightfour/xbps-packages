@@ -1,0 +1,17 @@
+pkgname=banana-cursor
+version=2.0.0
+revision=1
+short_desc="The banana cursor"
+maintainer="sodivine <xeightfour@gmail.com>"
+license="GPL-3.0-or-later"
+homepage="https://github.com/ful1e5/banana-cursor"
+distfiles="https://github.com/ful1e5/banana-cursor/releases/download/v${version}/Banana.tar.xz"
+checksum=9d2c4003315b3fc39b47c52dbfd6211d499db154b0fbb1c3c4dd9c0023561bf0
+nostrip=yes
+
+do_install() {
+	vmkdir /usr/share/icons/Banana
+	vcopy cursor.theme /usr/share/icons/Banana/
+	vcopy cursors /usr/share/icons/Banana/
+	vcopy index.theme /usr/share/icons/Banana/
+}

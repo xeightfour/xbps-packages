@@ -1,0 +1,11 @@
+pkgname=flat-remix-gtk
+version=20240730
+revision=1
+build_style=gnu-makefile
+short_desc="GTK application theme inspired by material design"
+maintainer="sodivine <xeightfour@gmail.com>"
+license="GPL-3.0-or-later"
+homepage="https://github.com/daniruiz/flat-remix-gtk"
+distfiles="https://github.com/daniruiz/flat-remix-gtk/archive/refs/tags/${version}.tar.gz"
+checksum=622ea576999bbdd5c76faa685dd58fff6a34cf3d7d6939a94b3742ed8cfd37ba
+nostrip=yes

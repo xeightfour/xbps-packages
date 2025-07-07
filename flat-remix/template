@@ -1,0 +1,27 @@
+pkgname=flat-remix
+version=20240201
+revision=1
+build_style=gnu-makefile
+short_desc="Icon theme inspired by material design"
+maintainer="sodivine <xeightfour@gmail.com>"
+license="GPL-3.0-or-later"
+homepage="https://github.com/daniruiz/flat-remix"
+distfiles="https://github.com/daniruiz/flat-remix/archive/refs/tags/${version}.tar.gz"
+checksum=f4ad5c51cfa72ccb6829b53f704529e96e44ef076fa58178132e56459a325702
+nostrip=yes
+
+pre_install() {
+	rm *-darkPanel -rf
+	rm *-Brown-* -rf
+	rm *-White-* -rf
+	rm *-Black-* -rf
+	rm *-Magenta-* -rf
+	rm *-Teal-* -rf
+	rm *-Violet-* -rf
+	rm *-Cyan-* -rf
+	rm *-Grey-* -rf
+	rm *-Green-* -rf
+	rm *-Red-* -rf
+	rm *-Yellow-* -rf
+	rm *-Blue-* -rf
+}
