@@ -15,3 +15,5 @@ do_install() {
 	vcopy cursors /usr/share/icons/Banana/
 	vcopy index.theme /usr/share/icons/Banana/
 }
+
+# vim: set ft=sh:

@@ -1,0 +1,17 @@
+pkgname=font-cascadia-code
+version=2407.24
+revision=1
+short_desc="New monospaced font that includes programming ligatures"
+maintainer="sodivine <xeightfour@gmail.com>"
+license="OFL-1.1"
+homepage="https://github.com/microsoft/cascadia-code"
+distfiles="https://github.com/microsoft/cascadia-code/releases/download/v${version}/CascadiaCode-${version}.zip"
+checksum=e67a68ee3386db63f48b9054bd196ea752bc6a4ebb4df35adce6733da50c8474
+nostrip=yes
+
+do_install() {
+	vmkdir /usr/share/fonts/cascadia-code
+	vcopy ttf/static/*.ttf /usr/share/fonts/cascadia-code/
+}
+
+# vim: set ft=sh:

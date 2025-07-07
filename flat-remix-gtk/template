@@ -9,3 +9,5 @@ homepage="https://github.com/daniruiz/flat-remix-gtk"
 distfiles="https://github.com/daniruiz/flat-remix-gtk/archive/refs/tags/${version}.tar.gz"
 checksum=622ea576999bbdd5c76faa685dd58fff6a34cf3d7d6939a94b3742ed8cfd37ba
 nostrip=yes
+
+# vim: set ft=sh:

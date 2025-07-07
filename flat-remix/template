@@ -25,3 +25,5 @@ pre_install() {
 	rm *-Yellow-* -rf
 	rm *-Blue-* -rf
 }
+
+# vim: set ft=sh:

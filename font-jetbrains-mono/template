@@ -1,0 +1,18 @@
+pkgname=font-jetbrains-mono
+version=2.304
+revision=1
+short_desc="The free and open-source typeface for developers"
+maintainer="sodivine <xeightfour@gmail.com>"
+license="OFL-1.1"
+homepage="https://github.com/JetBrains/JetBrainsMono"
+distfiles="https://github.com/JetBrains/JetBrainsMono/releases/download/v${version}/JetBrainsMono-${version}.zip"
+checksum=6f6376c6ed2960ea8a963cd7387ec9d76e3f629125bc33d1fdcd7eb7012f7bbf
+nostrip=yes
+
+do_install() {
+	vmkdir /usr/share/fonts/jetbrains-mono
+	vcopy fonts/ttf/*.ttf /usr/share/fonts/jetbrains-mono/
+	vlicense OFL.txt LICENSE
+}
+
+# vim: set ft=sh:

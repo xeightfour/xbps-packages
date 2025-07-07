@@ -1,0 +1,18 @@
+pkgname=font-cascadia-code-nerd
+version=3.4.0
+revision=1
+short_desc="Iconic font aggregator, collection, & patcher. 3,600+ icons, 50+ patched fonts"
+maintainer="sodivine <xeightfour@gmail.com>"
+license="OFL-1.1"
+homepage="https://github.com/ryanoasis/nerd-fonts"
+distfiles="https://github.com/ryanoasis/nerd-fonts/releases/download/v${version}/CascadiaCode.tar.xz"
+checksum=804b3d311665a059140466fe142cc76cf14ef0695b7c4d3a174f7f8fba46b6e3
+nostrip=yes
+
+do_install() {
+	vmkdir /usr/share/fonts/cascadia-code-nerd
+	vcopy *.ttf /usr/share/fonts/cascadia-code-nerd/
+	vlicense LICENSE
+}
+
+# vim: set ft=sh:
