@@ -1,0 +1,18 @@
+pkgname=font-agave
+version=37
+revision=1
+short_desc="Succulent monospace programming font"
+maintainer="Voheil <xeightfour@gmail.com>"
+license="MIT"
+homepage="https://github.com/blobject/agave"
+distfiles="https://github.com/blobject/agave/archive/refs/tags/v${version}.tar.gz"
+checksum=12af3b8cb7d645f7aa60b8680d1eae95f409affef921aac15ff3e05906e9e9d3
+nostrip=yes
+
+do_install() {
+	vmkdir usr/share/fonts/agave
+	vcopy dist/Agave-Regular.ttf /usr/share/fonts/agave/
+	vcopy dist/Agave-Bold.ttf /usr/share/fonts/agave/
+}
+
+# vim: set ft=sh:
